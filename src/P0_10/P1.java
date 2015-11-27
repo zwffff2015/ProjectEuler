@@ -22,7 +22,7 @@ public class P1 {
         return sum;
     }
 
-    /*此处利用了求和公式*/
+    /*此处利用了求和公式偶数*/
     public static long getSumBetter(int number){
         /* (1+2+...+333)*3+(1+2+...+199)*5-(1+2+..+66)*15 */
         int num = number - 1;
