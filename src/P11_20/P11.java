@@ -121,6 +121,7 @@ public class P11 {
         return max;
     }
 
+    /*
     private static int GetMultiplys(int[] index1, int[] index2, int[] index3, int[] index4, int[][] numbers) throws Exception {
         try {
             if (index1[0] < 0 || index1[0] >= numbers.length || index2[0] < 0 || index2[0] >= numbers.length
@@ -138,7 +139,7 @@ public class P11 {
         }
         return -1;
     }
-
+*/
     private static long GetMultiply(int[][] numbers, ArrayList<int[]> index) throws Exception {
         try {
             for (int i = 0; i < index.size(); i++) {
