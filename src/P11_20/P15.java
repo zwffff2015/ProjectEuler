@@ -34,4 +34,36 @@ public class P15 {
             return BigInteger.valueOf(1);
         return getFactorial(number - 1).multiply(BigInteger.valueOf(number));
     }
+
+    public static void Get() {
+        BigInteger i = BigInteger.valueOf(2);
+        BigInteger t = i.shiftLeft(999);
+        BigInteger divNum = t.divide(BigInteger.valueOf(10));
+        BigInteger sum = BigInteger.ZERO;
+        while (divNum.compareTo(BigInteger.valueOf(0)) != 0) {
+            sum = sum.add(t.mod(BigInteger.valueOf(10)));
+            t = divNum;
+            divNum = t.divide(BigInteger.valueOf(10));
+        }
+        sum = sum.add(t.mod(BigInteger.valueOf(10)));
+        return;
+    }
+
+    public static void getPow(int x, int n) {
+        int y = 1;
+        while (true) {
+            int t = n % 2;
+            n = (int) Math.floor(n / 2);
+
+            if (t == 1) {
+                y = y * x;
+            }
+
+            if (n == 0)
+                break;
+
+            x = x * x;
+        }
+
+    }
 }

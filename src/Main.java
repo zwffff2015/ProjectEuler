@@ -18,7 +18,7 @@ public class Main {
         System.out.println(P2.getSumBetter(4000000));
 
         /* Project Euler 3*/
-        System.out.println(P3.getLargest(600851475143L));
+        System.out.println(P3.getLargest(500));
 
         /* Project Euler 4*/
         System.out.println(P4.getPalindromic());
@@ -43,11 +43,47 @@ public class Main {
         System.out.println(P10.getPrimesSum(2000000));
 
         /* Project Euler 11*/
-        long startTime = System.currentTimeMillis();
         System.out.println(P11.getGreatestProduct(7));
+
+        /* Project Euler 12*/
+        long startTime = System.currentTimeMillis();
+        System.out.println(P12.getFirstTriangleNumber(500));
         long endTime = System.currentTimeMillis();
         float seconds = (endTime - startTime) / 1000F;
         System.out.println(Float.toString(seconds) + "s");
+
+        /* Project Euler 13*/
+        System.out.println(P13.get10HighBit());
+
+        /* Project Euler 14*/
+        System.out.println(P14.getLongestChainBetter(1000000));
+
+        /* Project Euler 15*/
+        System.out.println(P15.getTotalRoutes(20));
+
+        /* Project Euler 16*/
+        System.out.println(P16.getSumDigits(2, 1000));
+        System.out.println(P16.getPow(2, 10));
+
+        /* Project Euler 17*/
+        System.out.println(P17.getTotalLetters(1, 1000));
+        System.out.println(P17.getEnglish(1000000000));
+        System.out.println(P17.getEnglish(1000000));
+        System.out.println(P17.getEnglish(1000));
+        System.out.println(P17.getEnglish(100));
+        System.out.println(P17.getEnglish(999));
+        System.out.println(P17.getEnglish(85));
+        System.out.println(P17.getEnglish(8354));
+        System.out.println(P17.getEnglish(16250064));
+        System.out.println(P17.getEnglish(1237166234));
+        System.out.println(P17.getEnglish("125605445345265344524562442543252443"));
+
+        /* 求N!末尾有几个0 */
+        System.out.println(P16_1.getTotalZero(100));
+        System.out.println(P16_1.getTotalZero(2, 2));
+        System.out.println(P16_1.getTotalZero(3, 2));
+        System.out.println(P16_1.getTotalZero(4, 2));
+        System.out.println(P16_1.getTotalZero(4, 8));
 
         Scanner in = new Scanner(System.in);
         System.out.println("Please input a number:");
