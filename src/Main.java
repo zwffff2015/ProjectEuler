@@ -78,6 +78,15 @@ public class Main {
         System.out.println(P17.getEnglish(1237166234));
         System.out.println(P17.getEnglish("125605445345265344524562442543252443"));
 
+        /* Project Euler 18*/
+        System.out.println(P18.getTotalSum());
+
+        /* Project Euler 19*/
+        System.out.println(P19.getTotalSundaysFellOnFirstOfMonth(1901, 2000, 0));
+
+        /* Project Euler 20*/
+        System.out.println(P20.getTotalDigits(100));
+
         /* 求N!末尾有几个0 */
         System.out.println(P16_1.getTotalZero(100));
         System.out.println(P16_1.getTotalZero(2, 2));
