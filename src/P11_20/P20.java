@@ -19,15 +19,15 @@ public class P20 {
         int[] result = new int[number * 2];     //保存结果数据
         result[0] = 1;
 
-        int temp = 0;       //结果数据的最后位置
+        int currentPosition = 0;       //结果数据的最后位置
         for (int i = 2; i <= number; i++) {
             int carryBit = 0;
             for (int j = 0; j < result.length; j++) {
                 int tempResult = result[j] * i + carryBit;
                 result[j] = tempResult % 10;
                 carryBit = tempResult / 10;
-                if (carryBit == 0 && result[j + 1] == 0 && j >= temp) {
-                    temp = j;
+                if (carryBit == 0 && result[j + 1] == 0 && j >= currentPosition) {
+                    currentPosition = j;
                     break;
                 }
             }

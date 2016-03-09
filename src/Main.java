@@ -1,6 +1,8 @@
 import P0_10.*;
 import P11_20.*;
+import P21_30.*;
 
+import java.io.File;
 import java.util.Scanner;
 
 /**
@@ -87,12 +89,50 @@ public class Main {
         /* Project Euler 20*/
         System.out.println(P20.getTotalDigits(100));
 
+        /* Project Euler 21*/
+        startTime = System.currentTimeMillis();
+        System.out.println(P21.getSumOfAmicableNumbers(10000));
+        endTime = System.currentTimeMillis();
+        seconds = (endTime - startTime) / 1000F;
+        System.out.println(Float.toString(seconds) + "s");
+
+         /* Project Euler 22*/
+        System.out.println(P22.getTotal(String.format("%1$s%2$s%3$s%2$s%4$s%2$s%5$s", System.getProperty("user.dir"), File.separator, "src", "P21_30", "p022_names.txt")));
+
+        /* Project Euler 23*/
+        System.out.println(P23.getSum());
+
+        /* Project Euler 24*/
+        System.out.println(P24.getSpecifiedNumber(1000000));
+
+        /* Project Euler 25*/
+        System.out.println(P25.getIndex(1000));
+
+         /* Project Euler 26*/
+        System.out.println(P26.getLongestRecurringCycle(1000));
+        System.out.println(P26.getLongestRecurringCycleBetter(1000));
+
+         /* Project Euler 27*/
+        System.out.println(P27.getProduct());
+
+         /* Project Euler 28*/
+        System.out.println(P28.getSum(1001));
+        System.out.println(P28.getSumBetter(1001));
+
+         /* Project Euler 29*/
+        System.out.println(P29.getTotal(100));
+
         /* 求N!末尾有几个0 */
         System.out.println(P16_1.getTotalZero(100));
         System.out.println(P16_1.getTotalZero(2, 2));
         System.out.println(P16_1.getTotalZero(3, 2));
         System.out.println(P16_1.getTotalZero(4, 2));
         System.out.println(P16_1.getTotalZero(4, 8));
+
+        int[] a = {2, -8, 3, -2, 4, -10};
+        p ps = new p();
+        int max = ps.GetMaxSum(a, 6);
+        System.out.println("max:" + max);
 
         Scanner in = new Scanner(System.in);
         System.out.println("Please input a number:");
